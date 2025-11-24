@@ -1,0 +1,100 @@
+export const taskList = [
+  {
+    id: 1,
+    name: "Submit expense report",
+    priority: "medium",
+    dueDate: "2025-11-23", // Today
+    status: "In Progress",
+  },
+  {
+    id: 2,
+    name: "Plan marketing strategy",
+    priority: "high",
+    dueDate: "2025-11-24", // Tomorrow
+    status: "Not Started",
+  },
+  {
+    id: 3,
+    name: "Call the supplier",
+    priority: "low",
+    dueDate: "2025-11-22", // Yesterday
+    status: "Completed",
+  },
+  {
+    id: 4,
+    name: "Draft product roadmap",
+    priority: "high",
+    dueDate: "2025-10-28",
+    status: "In Progress",
+  },
+  {
+    id: 5,
+    name: "Organize meeting notes",
+    priority: "medium",
+    dueDate: "2025-12-05",
+    status: "Completed",
+  },
+  {
+    id: 6,
+    name: "Refactor authentication flow",
+    priority: "high",
+    dueDate: "2025-11-30",
+    status: "Not Started",
+  },
+  {
+    id: 7,
+    name: "Prepare weekly progress report",
+    priority: "medium",
+    dueDate: "2025-12-12",
+    status: "Completed",
+  },
+  {
+    id: 8,
+    name: "Clean up project files",
+    priority: "low",
+    dueDate: "2025-11-18",
+    status: "In Progress",
+  },
+  {
+    id: 9,
+    name: "Finalize UI designs",
+    priority: "high",
+    dueDate: "2025-12-01",
+    status: "Not Started",
+  },
+  {
+    id: 10,
+    name: "Review pull requests",
+    priority: "medium",
+    dueDate: "2025-12-22",
+    status: "Completed",
+  },
+  {
+    id: 11,
+    name: "Optimize database queries",
+    priority: "high",
+    dueDate: "2025-11-10",
+    status: "In Progress",
+  },
+  {
+    id: 12,
+    name: "Prepare training material",
+    priority: "low",
+    dueDate: "2025-12-18",
+    status: "Not Started",
+  },
+  {
+    id: 13,
+    name: "Update landing page copy",
+    priority: "medium",
+    dueDate: "2025-12-09",
+    status: "In Progress",
+  },
+  {
+    id: 14,
+    name: "Test notification module",
+    priority: "high",
+    dueDate: "2025-11-27",
+    status: "Completed",
+  },
+];

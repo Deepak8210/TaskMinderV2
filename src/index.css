@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&display=swap");
+@import "tailwindcss";
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+/* -----------------------------------
+   THEME OVERRIDES (Tailwind v4)
+------------------------------------ */
+@theme {
+  /* Colors */
+  --color-primary: #4a90e2;
+
+  --color-background-light: #f9fafb;
+  --color-background-dark: #111418;
+
+  --color-text-light: #333333;
+  --color-text-dark: #e0e0e0;
+
+  --color-border-light: #e0e0e0;
+  --color-border-dark: #3b4754;
+
+  --color-card-light: #ffffff;
+  --color-card-dark: #1c2127;
+
+  --color-muted-light: #999999;
+  --color-muted-dark: #9dabb9;
+
+  --color-priority-high: #d9534f;
+  --color-priority-medium: #f0ad4e;
+  --color-priority-low: #5bc0de;
+
+  /* Fonts */
+  --font-display: "Manrope", sans-serif;
+
+  /* Radii */
+  --radius: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-full: 9999px;
+}
+
+/* -----------------------------------
+   UTILITIES
+------------------------------------ */
+@layer utilities {
+  /* radio dropdown style */
+  .radio-priority-high {
+    @apply h-4 w-4
+      appearance-none
+      rounded-full
+      cursor-pointer
+      border-2 border-priority-high/70
+      bg-transparent
+      checked:border-[5px] checked:border-priority-high checked:bg-white
+      transition-all;
+  }
+  .radio-priority-medium {
+    @apply h-4 w-4
+      appearance-none
+      rounded-full
+      cursor-pointer
+      border-2 border-priority-medium/70
+      bg-transparent
+      checked:border-[5px] checked:border-priority-medium checked:bg-white
+      transition-all;
+  }
+  .radio-priority-low {
+    @apply h-4 w-4
+      appearance-none
+      rounded-full
+      cursor-pointer
+      border-2 border-priority-low/70
+      bg-transparent
+      checked:border-[5px] checked:border-priority-low checked:bg-white
+      transition-all;
+  }
+
+  .form-inputs {
+    @apply w-full
+      border
+      rounded-lg
+      px-3.5 py-2
+      focus:outline-0 focus:ring-2
+    text-text-dark
+    placeholder:text-muted-dark
+    focus:ring-primary/50
+    border-border-dark
+    bg-background-dark
+    focus:border-primary/50;
+  }
+
+  /* Text Gradient Utility */
+  .clip-text-gradient {
+    background-image: linear-gradient(to right, #ff2f23, #fb4a40);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Material Symbols utilities */
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  }
+
+  .material-symbols-filled {
+    font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+  }
+
+  /* Badge colors (light mode) */
+  .badge-high {
+    background-color: var(--color-priority-high);
+    color: white;
+  }
+  .badge-medium {
+    background-color: var(--color-priority-medium);
+    color: white;
+  }
+  .badge-low {
+    background-color: var(--color-priority-low);
+    color: white;
+  }
+
+  /* Badge soft colors (dark mode) */
+  .badge-high-soft {
+    background-color: color-mix(
+      in srgb,
+      var(--color-priority-high) 20%,
+      transparent
+    );
+    color: #ff8e8a;
+  }
+  .badge-medium-soft {
+    background-color: color-mix(
+      in srgb,
+      var(--color-priority-medium) 20%,
+      transparent
+    );
+    color: #ffd699;
+  }
+  .badge-low-soft {
+    background-color: color-mix(
+      in srgb,
+      var(--color-priority-low) 20%,
+      transparent
+    );
+    color: #a3e3f5;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px; /* custom width */
+  height: 6px; /* for horizontal scroll */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* no background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555; /* scrollbar color */
+  border-radius: 9999px; /* fully rounded */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
