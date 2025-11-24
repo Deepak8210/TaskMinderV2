@@ -3,21 +3,28 @@ export const taskList = [
     id: 1,
     name: "Submit expense report",
     priority: "medium",
-    dueDate: "2025-11-23", // Today
+    dueDate: "2025-11-23",
     status: "In Progress",
   },
   {
     id: 2,
     name: "Plan marketing strategy",
     priority: "high",
-    dueDate: "2025-11-24", // Tomorrow
+    dueDate: "2025-11-24",
+    status: "Not Started",
+  },
+  {
+    id: 35,
+    name: "Plan marketing strategy",
+    priority: "high",
+    dueDate: "2025-11-24",
     status: "Not Started",
   },
   {
     id: 3,
     name: "Call the supplier",
     priority: "low",
-    dueDate: "2025-11-22", // Yesterday
+    dueDate: "2025-11-23",
     status: "Completed",
   },
   {
@@ -92,6 +99,20 @@ export const taskList = [
   },
   {
     id: 14,
+    name: "Test notification module",
+    priority: "high",
+    dueDate: "2025-11-27",
+    status: "Completed",
+  },
+  {
+    id: 25,
+    name: "Test notification module",
+    priority: "high",
+    dueDate: "2025-11-27",
+    status: "Completed",
+  },
+  {
+    id: 18,
     name: "Test notification module",
     priority: "high",
     dueDate: "2025-11-27",

@@ -12,7 +12,7 @@ const Navbar = () => {
           <Bell className="text-muted-dark" />
         </button>
 
-        <Button>
+        <Button onClick={() => navigate("/tasks/new")}>
           <Plus className="text-white" />{" "}
           <span className="truncate text-white">Add Task</span>
         </Button>

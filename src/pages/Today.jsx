@@ -45,7 +45,7 @@ const Card = ({ task }) => {
 
 const Today = () => {
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col h-full overflow-y-auto pr-1">
       <div className="flex justify-between mb-6">
         <div className="flex flex-col gap-1">
           <h1 className="text-3xl font-bold text-text-dark">Today</h1>
@@ -57,7 +57,7 @@ const Today = () => {
         </button>
       </div>
 
-      <div className="flex flex-1 flex-col gap-3 overflow-y-auto rounded-t-lg pr-1">
+      <div className="flex flex-1 flex-col gap-3">
         {taskList.map((task) => (
           <Card task={task} />
         ))}
