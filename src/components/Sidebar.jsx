@@ -38,12 +38,12 @@ const sidebarSmartViews = [
   {
     label: "Overdue",
     icon: CircleAlert,
-    path: "/overdue",
+    path: "/tasks/overdue",
   },
   {
     label: "High Priority",
     icon: ArrowUp,
-    path: "/high-priority",
+    path: "/tasks/high-priority",
   },
 ];
 

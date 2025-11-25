@@ -10,6 +10,7 @@ const statusColors = {
   "not started": "bg-gray-500/20 text-muted-dark",
   "in progress": "bg-primary/20 text-muted-dark",
   completed: "bg-green-500/20 text-muted-dark",
+  overdue: "bg-red-500/20 text-red-400",
 };
 
 export default function Badge({

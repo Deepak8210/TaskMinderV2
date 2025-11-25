@@ -4,6 +4,8 @@ import Home from "../pages/Home";
 import Today from "../pages/Today";
 import TaskForm from "../pages/TaskForm";
 import Weekly from "../pages/Weekly";
+import Overdue from "../pages/Overdue";
+import HighPriority from "../pages/HighPriority";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +27,14 @@ const router = createBrowserRouter([
       {
         path: "tasks/weekly",
         element: <Weekly />,
+      },
+      {
+        path: "tasks/overdue",
+        element: <Overdue />,
+      },
+      {
+        path: "tasks/high-priority",
+        element: <HighPriority />,
       },
     ],
   },
