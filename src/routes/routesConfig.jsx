@@ -1,11 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
-import Home from "../pages/Home";
 import Today from "../pages/Today";
 import TaskForm from "../pages/TaskForm";
 import Weekly from "../pages/Weekly";
 import Overdue from "../pages/Overdue";
 import HighPriority from "../pages/HighPriority";
+import Dashboard from "../pages/Dashboard";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <Home />,
+        element: <Dashboard />,
       },
       {
         path: "tasks/today",

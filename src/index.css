@@ -10,6 +10,7 @@ body {
 @theme {
   /* Colors */
   --color-primary: #4a90e2;
+  --color-success: #28a745;
 
   --color-background-light: #f9fafb;
   --color-background-dark: #111418;

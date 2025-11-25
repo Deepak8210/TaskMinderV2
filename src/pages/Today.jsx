@@ -1,47 +1,6 @@
-import Badge from "../components/Badge";
 import { MdSwapVert } from "react-icons/md";
-import CustomCheckbox from "../components/CustomCheckbox";
-import { formatDate } from "../utils/helpers";
 import { taskList } from "../data";
-
-const Card = ({ task }) => {
-  const isCompletedStatus = task?.status.toLowerCase() === "completed";
-  return (
-    <div
-      className={`flex items-center gap-4 p-4 border border-border-dark ${
-        isCompletedStatus ? "bg-[#15191d]" : "bg-card-dark"
-      }  rounded-lg hover:shadow-md hover:border-primary/50 transition-all`}
-    >
-      <CustomCheckbox />
-      <p
-        className={`flex-1  font-medium ${
-          isCompletedStatus ? "line-through text-gray-500" : "text-text-dark"
-        }`}
-      >
-        {task?.name}
-      </p>
-      <div className="flex items-center gap-4">
-        <Badge priority={task?.priority} className="font-semibold" size="md">
-          {task?.priority}
-        </Badge>
-
-        <span
-          className={`${
-            isCompletedStatus
-              ? "line-through text-gray-500"
-              : "dark:text-muted-dark"
-          } text-sm  `}
-        >
-          {formatDate(task?.dueDate)}
-        </span>
-
-        <Badge status={task?.status} size="md">
-          {task?.status}
-        </Badge>
-      </div>
-    </div>
-  );
-};
+import Card from "../components/Card";
 
 const Today = () => {
   return (

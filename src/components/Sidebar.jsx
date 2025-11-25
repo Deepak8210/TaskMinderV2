@@ -7,9 +7,16 @@ import {
   Settings,
   CircleQuestionMark,
 } from "lucide-react";
-
+import { FaChartSimple } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
 
+const SpecialLinks = [
+  {
+    label: "Dashboard",
+    icon: FaChartSimple,
+    path: "/",
+  },
+];
 const sidebarMyList = [
   {
     label: "Work",
@@ -20,8 +27,8 @@ const sidebarMyList = [
     path: "/projects",
   },
   {
-    label: "Home",
-    path: "/",
+    label: "Personal",
+    path: "/personal",
   },
 ];
 const sidebarSmartViews = [
@@ -78,6 +85,31 @@ const Sidebar = () => {
             deepak@gmail.com
           </p>
         </div>
+      </div>
+      <div className="flex flex-col gap-1 mt-4">
+        {SpecialLinks?.map(({ label, icon, path }, i) => {
+          const Icon = icon;
+          return (
+            <NavLink
+              key={i}
+              to={path}
+              className={({ isActive }) =>
+                `flex items-center gap-3 px-3 py-2 rounded 
+     ${
+       isActive
+         ? "bg-primary/20 text-primary font-semibold"
+         : "hover:bg-primary/10 text-text-dark"
+     }`
+              }
+            >
+              {" "}
+              <span className="material-symbols-outlined ">
+                <Icon size={22} />
+              </span>
+              <p className="text-sm font-semibold">{label}</p>
+            </NavLink>
+          );
+        })}
       </div>
       <div className="flex flex-col gap-1 mt-4">
         <p className="py-2 text-xs font-bold uppercase text-muted-dark tracking-wider">

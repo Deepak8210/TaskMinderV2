@@ -1,5 +1,3 @@
-import React from "react";
-
 const priorityColors = {
   high: "badge-high-soft",
   medium: "badge-medium-soft",
